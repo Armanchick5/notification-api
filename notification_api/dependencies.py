@@ -2,7 +2,7 @@ from fastapi import Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
 from jose import JWTError, jwt
 from sqlalchemy.ext.asyncio import AsyncSession
-from database import AsyncSessionLocal
+from notification_api.database import AsyncSessionLocal
 from models import User
 import os
 from dotenv import load_dotenv

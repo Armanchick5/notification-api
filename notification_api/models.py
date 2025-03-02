@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, String, BigInteger, ForeignKey
-from database import Base
+from notification_api.database import Base
 
 
 class User(Base):

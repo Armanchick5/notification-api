@@ -4,8 +4,8 @@ from sqlalchemy.orm import Session
 from datetime import timedelta
 import models, schemas
 import crud
-from database import engine
-from auth import create_access_token
+from notification_api.database import engine
+from notification_api.auth import create_access_token
 from dependencies import get_db, get_current_user
 from fastapi_mail import FastMail, MessageSchema, ConnectionConfig
 from schemas import TelegramBind

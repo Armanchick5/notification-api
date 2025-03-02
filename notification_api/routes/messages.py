@@ -2,9 +2,8 @@ import os
 import requests
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.ext.asyncio import AsyncSession
-import crud
-import schemas
-from dependencies import get_db, get_current_user
+from notification_api import crud, schemas
+from notification_api.dependencies import get_db, get_current_user
 from fastapi_mail import FastMail, MessageSchema, ConnectionConfig
 from dotenv import load_dotenv
 
