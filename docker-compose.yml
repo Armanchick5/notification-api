@@ -5,11 +5,11 @@ services:
     image: postgres:15
     container_name: postgres_container
     environment:
-      POSTGRES_USER: arman
-      POSTGRES_PASSWORD: arman1234
-      POSTGRES_DB: fastapi_email
+      POSTGRES_USER: arman1
+      POSTGRES_PASSWORD: arman12345
+      POSTGRES_DB: fastapi_email_new
     ports:
-      - "5253:5432"
+      - "5052:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
